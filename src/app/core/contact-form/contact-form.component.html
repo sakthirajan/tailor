@@ -1,0 +1,51 @@
+<h3><strong>Fill this form and get best deals from "Tailors"</strong></h3>
+<br>
+<form [formGroup]="userform" (ngSubmit)="onSubmit(userform.value)">
+    <div class="ui-grid ui-grid-responsive ui-grid-pad ui-fluid" style="margin: 10px 0px">
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-4">
+                Your Name *:
+            </div>
+            <div class="ui-grid-col-4">
+                <input pInputText type="text" formControlName="firstname" placeholder="Required" />
+            </div>
+            <div class="ui-grid-col-4">
+                <p-message severity="error" text="Name is required"
+                    *ngIf="!userform.controls['firstname'].valid&&userform.controls['firstname'].dirty"></p-message>
+            </div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-4">
+                Your Mobile Number *:
+            </div>
+            <div class="ui-grid-col-4">
+                <input pInputText type="number" formControlName="number" placeholder="Required" />
+            </div>
+            <div class="ui-grid-col-4">
+                <p-message severity="error" text="number is required"
+                    *ngIf="!userform.controls['number'].valid&&userform.controls['number'].dirty"></p-message>
+            </div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-4">
+                Your Email ID (Optional)
+            </div>
+            <div class="ui-grid-col-4">
+                <input pInputText type="text" formControlName="email" placeholder="Required" />
+            </div>
+        </div>
+        <div class="ui-grid-row">
+            <div class="ui-grid-col-4"></div>
+            <div class="ui-grid-col-4">
+                <button pButton type="submit" label="Submit" [disabled]="!userform.valid"></button>
+            </div>
+            <div class="ui-grid-col-4"></div>
+        </div>
+    </div>
+</form>
+<ul>
+    <li>Your requirement is sent to the selected relevant businesses</li>
+    <li>Businesses compete with each other to get you the Best Deal</li>
+    <li>You choose whichever suits you best</li>
+    <li>Contact Info sent to you by SMS/Email</li>
+</ul>

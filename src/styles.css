@@ -1,0 +1,89 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
+
+.navbar-inverse {
+    background-color: #fff;
+    border-color: #fff;
+}
+header {
+    min-height: 100px;
+}
+.navbar-brand>img {
+    display: block;
+    width: 70%;
+    position: relative;
+    top: 13px;
+}
+ul.nav.navbar-nav {
+    position: relative;
+    top: 30px;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #000;
+}
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover{
+    color: #fff;
+    background-color: rgba(255,98,0,0.66);
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #000;
+}
+.col-md-5.searchBox {
+    position: absolute;
+    top: 40px;
+    right: 182px;
+    width: 30%;
+}
+.mar-20{
+    margin-top: 20px;
+}
+.mar-b-20{
+    margin-bottom: 20px;
+}
+.shop_details {
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #888;
+    text-align: center;
+}
+.shop-title {   
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.shop-img img {
+    width: 100%;
+}
+.ui-rating a{
+    color: orange !important;
+}
+.ui-dialog {
+    width:60%;
+    margin: auto;
+}
+.ui-dialog-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-top.ng-tns-c4-0.ng-star-inserted,
+.ui-dialog-titlebar.ui-widget-header.ui-helper-clearfix.ui-corner-top.ng-tns-c4-1.ng-star-inserted {
+    background: #116fbf;
+    color: #fff;
+}
+.ui-dialog .ui-dialog-titlebar .ui-dialog-titlebar-icon{
+    color: #fff !important;
+}
+.title-align{
+    color: orange;
+    margin-bottom: 20px;
+}
+.cotainers-pop{
+    width: 95%;
+    box-sizing: border-box;
+}
+span.Tailor-head {
+    padding: 10px;   
+    position: relative;   
+    top: 30px;
+    left: 70px;
+    font-size: 30px;
+    color: orange;
+    font-weight: bold;
+}

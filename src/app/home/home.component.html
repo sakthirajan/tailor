@@ -1,0 +1,60 @@
+<app-nav-bar (search)="onSearch($event)"></app-nav-bar>
+<app-banner></app-banner>
+
+<div class="container mar-20">
+    <div class="row">
+        <div class="col-md-4 mar-b-20" *ngFor="let shop of shopinfo |filter:term">
+            <div class="shop_details">
+                <div class="shop-title">{{shop.shopName}}</div>
+                <div class="shop-img">
+                    <img src="{{shop.image}}" alt="{{shop.shopName}}" title="{{shop.shopName}}" />
+                </div>
+                <div class="rating">
+                    <label></label>
+                    <p-rating [(ngModel)]="shop.rating" [cancel]="false" readonly="true" stars="5"></p-rating>
+                </div>
+                <div class="gentstype"><label>Type: </label> {{shop.type}}</div>
+                <div class="phone"><label>Phone No: </label> {{shop.phone}}</div>
+                <div class="city"><label>Location: </label> {{shop.city}}</div>
+                <button type="button" class="btn btn-primary" (click)="onRowId(shop)">Best Deal</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<p-dialog header="Shop Details" [(visible)]="display" [modal]="true" [responsive]="true" [minY]="70"
+    [maximizable]="true" [baseZIndex]="10000">
+    <div class="ui-g ui-fluid" *ngIf="shoppopup">
+        <!-- {{shoppopup | json}} -->
+        <div class="cotainers-pop">
+            <h2 class="title-align">{{shoppopup.shopName}}</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="show-details">
+                        <div class="img-show"><img src="{{shoppopup.image}}" alt="{{shoppopup.shopName}}" /></div>
+                    </div>
+                    <div class="rating" style="padding: 10px;">
+                        <label>Rating:</label>
+                        <p-rating [(ngModel)]="shoppopup.rating" [cancel]="false" readonly="true" stars="5"></p-rating>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="owner_name"><label for="owner">Owner name: </label> {{shoppopup.name}}</div>
+                    <div class="owner_address"><label for="address">Address: </label> {{shoppopup.Address}}</div>
+                    <div class="owner_phone"><label for="pincocd">Pincode: </label> {{shoppopup.pincocd}}</div>
+                    <div class="owner_type"><label for="type">type: </label> {{shoppopup.type}}</div>
+                    <div class="owner_phone"><label for="phone">Phone Number: </label> {{shoppopup.phone}}</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p-footer>
+        <button type=" button" pButton icon="pi pi-check" label="Contact Us" (click)="contactUs()"></button>
+    </p-footer>
+</p-dialog>
+
+<p-dialog header="Contact Us" [(visible)]="contactpop" [modal]="true" [responsive]="true" [minY]="70"
+    [maximizable]="true" [baseZIndex]="10000">
+    <app-contact-form></app-contact-form>
+</p-dialog>

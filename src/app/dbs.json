@@ -1,0 +1,76 @@
+{
+  "tailorShop": [
+    {
+      "id": 1,
+      "name": "Raja",
+      "image": "https://content.jdmagicbox.com/comp/bangalore/r4/080pxx80.xx80.120611174452.b3r4/catalogue/fashion-tailors-and-textiles-ramamurthy-nagar-bangalore-gents-tailors-nfvefaumui.jpg?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A",
+      "shopName": "Fashion Tailors And Textiles",
+      "phone": 23425,
+      "Address": "No.229, 5th Main Road",
+      "city": "Bengalore",
+      "pincocd": 560100,
+      "type": "Gents Tailors",
+      "rating": 3
+    },
+    {
+      "id": 2,
+      "name": "Gopi",
+      "image": "https://content.jdmagicbox.com/comp/bangalore/56/080p5149556/catalogue/prakash-tex-tailors-richmond-town-bangalore-tailors-5m7vlp.jpg?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A",
+      "shopName": "Prakash Tex-tailors",
+      "phone": 894567,
+      "Address": "Ramanjeneya Complex, Immadihalli Main Road,",
+      "city": "Madurai",
+      "pincocd": 625000,
+      "type": "Gents Tailors",
+      "rating": 2
+    },
+    {
+      "id": 3,
+      "name": "name1",
+      "image": "https://content.jdmagicbox.com/comp/bangalore/b6/080pxx80.xx80.130316105421.e9b6/catalogue/classic-touch-textiles-sanjay-nagar-bangalore-tailors-0xvs8citr1.jpg?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A",
+      "shopName": "Classic Touch Textiles",
+      "phone": 23425,
+      "Address": "56, old road,",
+      "city": "Chennai",
+      "pincocd": 560100,
+      "type": "Womans Tailors",
+      "rating": 2
+    },
+    {
+      "id": 4,
+      "name": "name2",
+      "image": "https://content.jdmagicbox.com/comp/bangalore/p6/080pxx80.xx80.140829225619.a1p6/catalogue/shri-sai-baba-tailoring-whitefield-bangalore-tailors-39hf0w7.jpg?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A",
+      "shopName": "Shri Sai Baba Tailoring",
+      "phone": 23425,
+      "Address": "57, old road,",
+      "city": "Bengalore",
+      "pincocd": 560100,
+      "type": "Gents & Womans Tailors",
+      "rating": 4
+    },
+    {
+      "id": 5,
+      "name": "name3",
+      "image": "https://content.jdmagicbox.com/comp/bangalore/m1/080pxx80.xx80.111227175154.x4m1/catalogue/liberty-tailors-ulsoor-bangalore-tailors-0ootxs14wu.jpg?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A",
+      "shopName": "Liberty Tailors",
+      "phone": 23425,
+      "Address": "57, old road,",
+      "city": "Bengalore",
+      "pincocd": 560100,
+      "type": "Womans Tailors",
+      "rating": 3
+    },
+    {
+      "id": 6,
+      "name": "name4",
+      "image": "https://content.jdmagicbox.com/comp/bangalore/c4/080pxx80.xx80.170905163317.g3c4/catalogue/dp-tailoring-bellandur-bangalore-tailors-luuxkq.jpg?fit=around%7C270%3A130&crop=270%3A130%3B%2A%2C%2A",
+      "shopName": "Abhinay Fabrics",
+      "phone": 23425,
+      "Address": "57, old road,",
+      "city": "Chennai",
+      "pincocd": 560100,
+      "type": "man Tailors",
+      "rating": 3
+    }
+  ]
+}
